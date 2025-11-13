@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fotogalerij met fade-effect</title>
+
+<!-- jQuery via CDN -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    text-align: center;
+    margin-top: 40px;
+  }
+
+  /* Container voor de galerij */
+  #galerij {
+    display: inline-block;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  }
+
+  /* Grote foto */
+  #groteFoto {
+    width: 400px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+
+  /* Beschrijvende tekst onder de grote foto */
+  #beschrijving {
+    margin-top: 10px;
+    font-style: italic;
+    color: #333;
+  }
+
+  /* Strip met kleine foto's */
+  #thumbnails {
+    margin-top: 20px;
+  }
+
+  #thumbnails img {
+    width: 100px;
+    height: 75px;
+    margin: 5px;
+    border: 2px solid transparent;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: border-color 0.2s;
+  }
+
+  #thumbnails img:hover {
+    border-color: #007bff;
+  }
+</style>
+</head>
+<body>
+
+<div id="galerij">
+  <img id="groteFoto" src="images/Juli.jpg" alt="grote foto">
+  <div id="beschrijving">Kalender 2026</div>
+
+  <div id="thumbnails">
+    <img src="images/Januari.jpg" data-full="images/Januari.jpg" title="Januari">
+    <img src="images/Februari.jpg" data-full="images/Februari.jpg" title="Februari">
+    <img src="images/Maart.jpg" data-full="images/Maart.jpg" title="Maart">
+    <img src="images/April.jpg" data-full="images/April.jpg" title="April">
+    <img src="images/Mei.jpg" data-full="images/Mei.jpg" title="Mei">
+    <img src="images/Juni.jpg" data-full="images/Juni.jpg" title="Juni">
+    <img src="images/Juli.jpg" data-full="images/Juli.jpg" title="Juli">
+    <img src="images/Augusutus.jpg" data-full="images/Augusutus.jpg" title="Augusutus">
+    <img src="images/September.jpg" data-full="images/September.jpg" title="September">
+    <img src="images/Oktober.jpg" data-full="images/Oktober.jpg" title="Oktober">
+    <img src="images/November.jpg" data-full="images/November.jpg" title="November">
+    <img src="images/December.jpg" data-full="images/December.jpg" title="December">
+  </div>
+</div>
+ <script src="./les10-4.js"></script>
+</body>
+</html>
